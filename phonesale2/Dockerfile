@@ -10,6 +10,6 @@ RUN mvn clean package -DskipTests
 #
 FROM openjdk:8-jdk-slim
 COPY --from=build /target/phonesale2-0.0.1-SNAPSHOT.jar phonesale2.jar
-# ENV PORT=8080
+
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","phonesale2.jar"]
