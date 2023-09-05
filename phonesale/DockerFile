@@ -1,4 +1,4 @@
-FROM openjdk :8-jdk-alpine
+FROM openjdk:8-jdk-alpine
 
 COPY target/phonesale-0.0.1-SNAPSHOT.jar phonesale-0.0.1-SNAPSHOT.jar
 
